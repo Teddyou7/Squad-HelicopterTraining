@@ -5,6 +5,10 @@ The automation operation script used in the helicopter training server can be fo
 
 本项目是冲锋号社区#4当前正在使用的部分脚本。
 
+注意！本脚本虽经线上运行，但未在其他场景进行过启动测试，启动时可能存在报错。
+
+环境要求：Centos7、gcc
+
 
 
 其功能如下：
