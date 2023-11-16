@@ -1,6 +1,8 @@
 # Squad-HelicopterTraining
 The automation operation script used in the helicopter training server can be found in BugleCallToCharge# 4 of Squad's custom server for details
 
+冲锋号社区门户群：703511605
+
 本项目是冲锋号社区#4当前正在使用的部分脚本。
 
 
