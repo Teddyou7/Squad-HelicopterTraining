@@ -10,23 +10,23 @@ TM=`expr $STTC + 28800`
 TO=`date +%s`
 TC=`expr $TO - $TM`
 
-  if [ "$TC" -lt 20 ];then
-        ./rcon -p$PORT -P$PASSWD AdminForceAllVehicleAvailability 1
+  if [ "$TC" -lt 15 ];then
+        ./rcon -p$PORT -P$PASSWD AdminSlomo 20
         sleep 2
-        ./rcon -p$PORT -P$PASSWD AdminForceAllDeployableAvailability 1
+        ./rcon -p$PORT -P$PASSWD AdminForceAllVehicleAvailability 1
         sleep 2
         ./rcon -p$PORT -P$PASSWD AdminForceAllRoleAvailability 1
         sleep 2
+        ./rcon -p$PORT -P$PASSWD AdminForceAllDeployableAvailability 1
+        sleep 2
         ./rcon -p$PORT -P$PASSWD AdminDisableVehicleTeamRequirement 1
+        sleep 2
+        ./rcon -p$PORT -P$PASSWD AdminForceAllRoleAvailability 1
         sleep 2
         ./rcon -p$PORT -P$PASSWD AdminDisableVehicleKitRequirement 1
         sleep 2
-        ./rcon -p$PORT -P$PASSWD AdminDisableVehicleClaiming 1
-        sleep 2
         ./rcon -p$PORT -P$PASSWD AdminNoRespawnTimer 1
-        sleep 2
-        ./rcon -p$PORT -P$PASSWD AdminSlomo 20
-        sleep 10
+        sleep 7
         ./rcon -p$PORT -P$PASSWD AdminSlomo 1
   fi
 sleep 3
