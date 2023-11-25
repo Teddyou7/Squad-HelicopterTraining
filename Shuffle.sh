@@ -1,5 +1,7 @@
 #!/bin/bash
 #自动打乱脚本；注意！本脚本通过Apache的HTTPD-CGI调用，但也是可以通过在后台运行，不需要传入参数。
+#其使用的RCON源码：https://github.com/Teddyou7/BCTC-Jackets-Squad-WebHook/blob/main/bin/rcon/rcon.c
+#其使用的MCRCON源码：https://github.com/Tiiffi/mcrcon
 
 RCON_IP=127.0.0.1
 RCON_PASSWD=XXXXXX
